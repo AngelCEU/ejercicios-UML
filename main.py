@@ -112,3 +112,38 @@ print(maria._sexo)
 print(maria.numero_identificador)
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
+#ejercicio7
+
+from ejercicio7.ejercicio7 import LugarDeActuacion
+from ejercicio7.ejercicio7 import MiembroDelEquipo
+from ejercicio7.ejercicio7 import Proyecto
+from datetime import date
+
+if __name__ == "__main__":
+    # Crear proyecto
+    A = Proyecto("Implementación de Sistema", date(2023, 1, 15), date(2023, 6, 30))
+
+    # Agregar miembros
+    A.agregar_miembro(MiembroDelEquipo("Ana", "García", "Desarrolladora"))
+    A.agregar_miembro(MiembroDelEquipo("Luis", "Pérez", "Analista"))
+
+    # Agregar lugares
+    A.agregar_lugar(LugarDeActuacion(40.4167, -3.70325, "Madrid"))
+    A.agregar_lugar(LugarDeActuacion(41.3888, 2.159, "Barcelona"))
+
+    print(A)
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+#ejercicio8
+from ejercicio8.ejercicio8 import Actuacion, TipoActuacion
+from datetime import date
+
+if __name__ == "__main__":
+    a1 = Actuacion(date(2023, 5, 1), TipoActuacion.SONDEO)
+    a2 = Actuacion(date(2023, 6, 10), TipoActuacion.EXCAVACION, date(2023, 7, 15))
+    a3 = Actuacion(date(2023, 8, 20), TipoActuacion.SEGUIMIENTO)
+
+    print(a1)
+    print(a2)
+    print(a3)
