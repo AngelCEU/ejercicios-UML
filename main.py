@@ -17,8 +17,8 @@ print(f"El círculo es de color {circulo_negro.color} y tiene un diámetro de {c
 from ejercicio2.ejercicio2 import Persona
 
 kate = Persona("Kate", "Windsor", "Mujer", "Middleton")
-guillermo = Persona("Guillermo", "Windsor", "Hombre")
-carlos = Persona("Carlos", "Windsor", "Hombre")
+guillermo = Persona("Guillermo", "Windsor", "Hombre", "windsor")
+carlos = Persona("Carlos", "Windsor", "Hombre", "windsor")
 diana = Persona("Diana", "Windsor", "Mujer", "Spencer")
 
 kate.casar(guillermo)
